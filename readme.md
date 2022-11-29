@@ -12,7 +12,7 @@
   - djikstra
 
 - Greedy Algorithms
-    - Time window thingy 
+  - Time window thingy 
 - Sorting algorithms:
   - MergeSort
   - Quicksort
