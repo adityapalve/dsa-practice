@@ -30,22 +30,3 @@ class Solution:
 list = [1, 3, 5, 6, 10, 72]
 sol = Solution()
 print(sol.search(list, 6))
-
-# []
-
-class Solution:
-    def __init__(self):
-        l = []
-    
-    def search(self, i, left, right):
-        if(left > right):
-            return -1
-        
-        if(left < right):
-
-
-
-# obj = Solution()
-i = [7,6,2,5,3,8]
-print(len(i))
-print(i[2:6])

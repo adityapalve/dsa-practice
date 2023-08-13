@@ -1,0 +1,14 @@
+{
+    "configurations": [
+      {
+        "arguments": [
+          "$PROJECT_DIR$/"
+        ],
+        "name": "run",
+        "type": "python",
+      },
+
+    ]
+}
+
+

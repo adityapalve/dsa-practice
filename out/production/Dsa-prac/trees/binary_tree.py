@@ -6,9 +6,6 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-    
-    def shape(self):
-        return [self.left.val, self.val, self.right.val]
 
 
 class Solution:
@@ -27,11 +24,3 @@ class Solution:
             return node
 
         return invert(root)
-
-
-a = TreeNode(1, None, None)
-c = TreeNode(8, None, None)
-b = TreeNode(5, None, c)
-tree = TreeNode(10, a, b)
-
-print(tree.shape())

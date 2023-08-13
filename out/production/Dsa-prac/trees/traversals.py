@@ -3,16 +3,6 @@
 #                    2. DFS
 #
 
-'''
-class Node:
-    def __init__(self, key: int, left: int = None, right: int = None):
-        self.key = key
-        self.left = left
-        self.right = right
-    its important for the default values to be as parameters other wise we will
-    always be instantiating the class with None values for left and right. 
-'''
-
 class Node:
     def __init__(self, key: int):
         self.right = None
@@ -76,29 +66,6 @@ root.left.right = Node(7)
 root.right.right = Node(17)
 root.right.left = Node(11)
 obj                                                                                                                                                                                                                                                                                                                            = Traversal()
-# print(obj.inorderTraversal(root))
-# print(obj.postorderTraversal(root))
-# print(obj.preorderTraversal(root))
-
-
-'''
- tree = [1, 2, 4, 5]
-
-'''
-def node(val):
-    return {
-        'val': val,
-        'left': val.left,
-        'right': val.right
-    }
-class 
-
-def inorder(root):
-    if root is None:
-        return
-
-    inorder(root.left)
-    print(root.val)
-    inorder(root.right)
-
-inorder()
+print(obj.inorderTraversal(root))
+print(obj.postorderTraversal(root))
+print(obj.preorderTraversal(root))
