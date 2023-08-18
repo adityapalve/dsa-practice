@@ -1,0 +1,6 @@
+*.exe
+*.vscode
+*.idea
+*.fleet
+/out/production/Dsa-prac
+conda_venv
