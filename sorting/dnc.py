@@ -48,6 +48,9 @@ def sort(nums):
 
 
 # print(quicksort())
-a = [7,6,8,3,10,2,3,3]
+# a = [7,6,8,3,10,2,3,3]
 # print(quicksort(a))
-print(sort(a))
+# print(sort(a))
+
+a = (0 + 1)//2
+print(a)

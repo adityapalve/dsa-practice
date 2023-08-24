@@ -1,12 +1,12 @@
 def sort(m: list, lo: int, hi: int):
     if(lo < hi):
-        p = partition(m, lo, hi)
+        p: int = partition(m, lo, hi)
         
         sort(m, lo, p-1)
         sort(m, p+1, hi)
 #    return m
 
-def partition(x: list,lo:int,hi:int):
+def partition(x: list,lo:int,hi:int) -> int:
     pivot = x[hi]
     i = lo-1
 
