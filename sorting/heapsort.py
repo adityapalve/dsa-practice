@@ -1,18 +1,16 @@
 # HeapSort
-def quicksort(nums):
-    left, right, equals = [], [], []
-    if(len(nums)<1):
-        return []
-    mid = len(nums)//2
+# Writing heapsort today
 
-    for i in nums:
-        if i< nums[mid]:
-            left.append(i)
-        elif i > nums[mid]:
-            right.append(i)
-        else:
-            equals.append(i)
 
-    return quicksort(left) + equals + quicksort(right)
-a = [3, 5, 24, 6]
-print(quicksort(a))
+def heapify(nums:list[int], size:int, i:int) -> list[int]:
+    pass
+
+def build(nums:list[int]):
+  pass
+
+def heapsort(nums: list[int]) -> list[int]:
+    pass
+
+
+a = [12, 2, 43, 32, 112]
+print(heapsort(a))
