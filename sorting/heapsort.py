@@ -2,11 +2,13 @@
 # Writing heapsort today
 
 
-def heapify(nums:list[int], size:int, i:int) -> list[int]:
+def heapify(nums: list[int], size: int, i: int) -> list[int]:
     pass
 
-def build(nums:list[int]):
-  pass
+
+def build(nums: list[int]):
+    pass
+
 
 def heapsort(nums: list[int]) -> list[int]:
     pass
