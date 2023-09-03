@@ -2,5 +2,5 @@
 *.vscode
 *.idea
 *.fleet
-/out/production/Dsa-prac
+out
 conda_venv
