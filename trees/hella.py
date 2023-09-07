@@ -1,4 +1,3 @@
-
 class Node:
   def __init__(self, val=None, left=None, right=None):
     self.val = val
@@ -41,6 +40,13 @@ class Node:
         f'right: {self.right}'
       )
 
+  def dfs(self, root):
+    pass
+
+  def bfs(self, root):
+    pass
+
+
 # tree = [1, 2, 4, 5]
 l = Node(5, None, None)
 r = Node(13, 4, 2)
@@ -71,4 +77,3 @@ o.preorder(o)
 print('---')
 print('Postorder:')
 o.postorder(o)
-
