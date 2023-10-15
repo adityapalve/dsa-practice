@@ -36,7 +36,21 @@ print(min_process(n,task_memory,task_type,max_mem))
 
 """
 The Other Complement approach could be this,
-theoretically this would be O(n). 
+theoretically this would be O(n).
+Sorting is O(nlogn). The problem is somewhat analogous to the knapsack problem. 
+We want to find pairs that fit into our max_memory constraint optimally.
+
+A more efficient approach might be using a hash table (in Python, a set or dict would be handy). 
+Instead of sorting, we can process tasks in their original order for each type. 
+Here's an approach using a set:
+
+For each type group:
+Create an empty set seen.
+For each task in the type group:
+Compute the complement as max_memory - task_memory[i].
+If complement is in seen, we've found a pair. Remove complement from seen and move on.
+Otherwise, add task_memory[i] to seen.
+The number of pairs formed will give us the number of tasks processed in parallel. The remaining tasks in the seen set will be processed individually. 
 """
 def min_time_to_process(n, task_memory, task_type, max_memory):
     from collections import defaultdict
