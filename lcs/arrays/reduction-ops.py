@@ -2,7 +2,7 @@
 This is valid solution but brute forcing the problem
 and would throw a TLE.
 """
-def reductionOperations(nums):
+def reductionOperations_BF(nums):
   nums.sort()
   print(nums)
   end = len(nums)-1
@@ -16,6 +16,20 @@ def reductionOperations(nums):
       count += 1
       end = len(nums)-1
       print(nums, end, count)
+  return count
+
+
+"""
+The optimal solution.
+"""
+
+def reductionOperations(nums):
+  nums.sort(reverse=True)
+  count = 0
+  for i in range(1,len(nums)):
+    if nums[i] != nums[i-1]:
+      count += i
+  
   return count
 
 nums = [7,9,10,8,6,4,1,5,2,3]
