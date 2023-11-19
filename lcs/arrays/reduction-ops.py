@@ -26,10 +26,17 @@ The optimal solution.
 def reductionOperations(nums):
   nums.sort(reverse=True)
   count = 0
-  for i in range(1,len(nums)):
-    if nums[i] != nums[i-1]:
-      count += i
-  
+  # for i in range(1,len(nums)):
+  #   if nums[i] != nums[i-1]:
+  #     count += i
+  ans = 0
+  up = 0
+  for i in range(1, len(nums)):
+    if nums[i] != nums[i - 1]:
+      up += 1
+      print(ans,up)
+    ans += up
+    print(ans,up, i)
   return count
 
 nums = [7,9,10,8,6,4,1,5,2,3]
