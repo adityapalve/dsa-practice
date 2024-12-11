@@ -1,7 +1,9 @@
 *.exe
 *.vscode
-*.idea
+.idea
 *.fleet
 out
 conda_venv
 build
+tests
+target
